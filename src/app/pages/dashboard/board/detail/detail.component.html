@@ -1,0 +1,23 @@
+<p-dialog header="{{taskDetail.id}}" [draggable]=false [modal]="true" [style]="{width: '550px'}" [(visible)]="display">
+  <ng-template pTemplate="content">
+      <div class="p-fluid p-grid">
+        <div class="p-field p-col-12 p-md-6">
+          <label for="title">Description</label>
+          <textarea id="title" value={{taskDetail.description}} type="text" pInputText></textarea>
+        </div>
+        <div class="p-field p-col-12 p-md-6">
+            <label for="priority">Priority</label>
+            <input id="priority" value={{taskDetail.priority}} type="text" pInputText>
+        </div>
+        <div class="p-field p-col-12 p-md-6">
+          <label for="assignedTo">Assigned To:</label>
+          <input id="assignedTo" value={{taskDetail.assignedTo}} type="text" pInputText>
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template pTemplate="footer">
+      <button pButton label="Cancel" icon="pi pi-times" class="p-button-text" (click)="hideDialog()"></button>
+      <button pButton label="Submit" icon="pi pi-check" class="p-button-text" (click)="submitDialog()"></button>
+  </ng-template>
+</p-dialog>
