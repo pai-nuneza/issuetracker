@@ -15,6 +15,8 @@ import { MenuModule } from 'primeng/menu';
 import { TreeModule } from 'primeng/tree';
 import { ChipModule } from 'primeng/chip';
 import { TagModule } from 'primeng/tag';
+import { DialogModule } from 'primeng/dialog';
+
 
 let PrimeNG = [
   MenubarModule,
@@ -31,7 +33,8 @@ let PrimeNG = [
   TreeModule,
   CommonModule,
   ChipModule,
-  TagModule
+  TagModule,
+  DialogModule
 ];
 
 @NgModule({
@@ -39,4 +42,4 @@ let PrimeNG = [
   exports: [PrimeNG],
   declarations: [],
 })
-export class SharedModule {}
+export class SharedModule { }
