@@ -14,8 +14,8 @@
             {{ column.name }}
           </div>
 
-          <div (click)="viewIssue()" class="tasks-container" cdkDropList [cdkDropListData]="column.tasks" (cdkDropListDropped)="drop($event)">
-            <div class="task" *ngFor="let item of column.tasks" cdkDrag>
+          <div class="tasks-container" cdkDropList [cdkDropListData]="column.tasks" (cdkDropListDropped)="drop($event)">
+            <div (click)="viewIssue(item)" class="task" *ngFor="let item of column.tasks" cdkDrag>
 
               <div style="float: right;">
                 <p-tag severity="{{getSeverity(item.status)}}" [rounded]="true" value="{{item.status}}"></p-tag> &nbsp;

@@ -50,8 +50,8 @@ export class BoardComponent implements OnInit {
 
   ngOnInit() { }
 
-  viewIssue() {
-
+  viewIssue(item: TaskItem) {
+    alert(item.description)
   }
 
   drop(event: CdkDragDrop<TaskItem[]>) {
