@@ -1,0 +1,95 @@
+{
+  "name": "Board",
+  "columns": [
+    {
+      "name": "issues",
+      "columnId": 1,
+      "tasks": [
+        {
+          "id": "CAR-1651",
+          "description": "RxJs Subscription Error",
+          "status": "issues",
+          "priority": "Low"
+        },
+        {
+          "id": "FBD-2322",
+          "description": "Database performance",
+          "status": "issues",
+          "priority": "High"
+        }
+      ]
+    },
+    {
+      "name": "todo",
+      "columnId": 2,
+      "tasks": [
+        {
+          "id": "MLD-1140",
+          "description": "Error during loading page",
+          "status": "todo",
+          "priority": "Low"
+        },
+        {
+          "id": "MOP-0712",
+          "description": "Error during loading page",
+          "status": "todo",
+          "priority": "Low"
+        },
+        {
+          "id": "CRI-7892",
+          "description": "Duplicate Records",
+          "status": "todo",
+          "priority": "High"
+        },
+        {
+          "id": "HGF-1102",
+          "description": "Slow page",
+          "status": "todo",
+          "priority": "High"
+        }
+      ]
+    },
+    {
+      "name": "in progress",
+      "columnId": 3,
+      "tasks": [
+        {
+          "id": "MLD-1140",
+          "description": "Error during loading page",
+          "status": "todo",
+          "priority": "Low"
+        },
+        {
+          "id": "MOP-0712",
+          "description": "Error during loading page",
+          "status": "todo",
+          "priority": "Low"
+        },
+        {
+          "id": "CRI-7892",
+          "description": "Duplicate Records",
+          "status": "todo",
+          "priority": "High"
+        },
+        {
+          "id": "HGF-1102",
+          "description": "Slow page",
+          "status": "todo",
+          "priority": "High"
+        }
+      ]
+    },
+    {
+      "name": "done",
+      "columnId": 4,
+      "tasks": [
+        {
+          "id": "CRI-5524",
+          "description": "Forbidden",
+          "status": "done",
+          "priority": "success"
+        }
+      ]
+    }
+  ]
+}
