@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BoardComponent } from './board/board.component';
-import { DetailComponent } from './detail/detail.component';
+import { DetailComponent } from './board/detail/detail.component';
 
 const dashboardRoutes: Routes = [
   { path: 'board', component: BoardComponent },

@@ -18,15 +18,22 @@ export class MenuComponent implements OnInit {
     this.items = [{
       label: 'Issues',
       items: [
-        { label: 'View All', routerLink: 'dashboard/board' },
-        { label: 'Create New'},
+        { label: 'List', routerLink: 'dashboard/board' },
+        { label: 'Create' },
       ]
     },
     {
-      label: 'Charts',
+      label: 'Users',
       items: [
-        { label: 'Undo', icon: 'pi pi-refresh' },
-        { label: 'Redo', icon: 'pi pi-repeat' }
+        { label: 'List', routerLink: 'admin/users' },
+        { label: 'Create' }
+      ]
+    },
+    {
+      label: 'Teams',
+      items: [
+        { label: 'List', routerLink: 'admin/teams' },
+        { label: 'Create' }
       ]
     }];
   }
