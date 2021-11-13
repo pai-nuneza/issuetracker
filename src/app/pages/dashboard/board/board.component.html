@@ -18,7 +18,7 @@
             <div (click)="viewIssue(item)" class="task" *ngFor="let item of column.tasks" cdkDrag>
 
               <div style="float: right;">
-                <p-tag severity="{{getSeverity(item.status)}}" [rounded]="true" value="{{item.status}}"></p-tag> &nbsp;
+                <p-tag severity="{{getSeverity(item.priority)}}" [rounded]="true" value="{{item.status}}"></p-tag> &nbsp;
                 <i class="pi pi-star" pTooltip="Mark as important"></i> &nbsp;
                 <i class="pi pi-clone" pTooltip="Clone this item"></i>
               </div>
@@ -30,11 +30,10 @@
             </div>
           </div>
         </div>
-
       </div>
-
     </div>
 
   </div>
-
 </div>
+
+<task-detail></task-detail>
